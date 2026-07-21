@@ -1,0 +1,24 @@
+.addBtn{
+
+      all: unset;
+ align-self: center;
+ padding: 0.51rem;
+
+ font-size: 1.5rem;
+ background-color: #6864ac;
+ text-align: center;
+ border-radius: 5px;
+ align-self: center;
+ color: white;
+ font-weight: bold;
+  box-shadow: 1px 1px 2px  #554f7e;
+  transition: linear 0.2s;
+    font-size: 1rem;
+    width: 12%;
+    /* width: 100%; */
+    cursor: pointer;
+}
+.addBtn:hover{
+          box-shadow: 2px 2px 4px #3a3764 ;
+    transform: translateY(-1px);
+}

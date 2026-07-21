@@ -1,0 +1,33 @@
+.container{
+     /* height: 100%;  */
+     width: 50%; 
+     height:100%;
+     background-color:white ;
+  /* border: 1px solid grey; */
+  border-radius: 5px;
+    display: flex;
+    /* justify-content: center; */
+    box-shadow: 1px 1px 6px 1px rgba(211, 210, 210,0.5);
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+    transition: linear 0.25s;
+}
+.container:hover{
+    transform: scale(1.01,1.01);
+}
+.container input{
+    all: unset;
+    /* height: 100%;
+    width: 100%; */
+   
+    flex-grow: 1;
+    font-size: 1.1rem;
+    
+}
+.container input:focus{
+    border: white 2px solid;
+}
+.container img{
+    height: 20px;
+}

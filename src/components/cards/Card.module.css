@@ -1,0 +1,100 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.04),
+    0px 4px 8px rgba(0, 0, 0, 0.04),
+    0px 10px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+  padding: 0.5rem 1rem 1rem 1rem;
+  text-align: justify;
+  overflow-wrap: break-word;
+  font-size: small;
+  background-color: white;
+  transition: ease-out 0.3s;
+
+
+
+  
+}
+.card:hover {
+  box-shadow:
+    0px 1px 2px rgba(0, 0, 0, 0.1),
+    0px 4px 8px rgba(0, 0, 0, 0.1),
+    0px 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+.cardContent {
+  flex-grow: 1;
+}
+.cardContent h2 {
+  margin: 0;
+}
+.cardContent p {
+  margin: 0.5rem;
+
+}
+.contentSection{
+   max-height: 135px;
+   
+    overflow-y: auto;
+    overflow-wrap: break-word;
+    scrollbar-width: thin;
+     /* scrollbar-arrow-color:white; */
+}
+/* Chrome / Edge */
+.contentSection::-webkit-scrollbar {
+  width: 6px;  /* required — otherwise default scrollbar appears */
+  
+}
+
+
+.btns {
+  /* text-align: right; */
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  padding: 0.3rem;
+}
+
+
+.editIcon {
+  height: 1.1rem;
+}
+.binIcon {
+  height: 1rem;
+}
+.btns img {
+  transition: linear 0.3s;
+  cursor: pointer;
+}
+
+.btns img:hover {
+  transform: scale(1.2, 1.2);
+  /* transform: translateY(-2px); */
+}
+.favIcon img {
+  display: block;
+  height: 1.5em;
+  transition: linear;
+  cursor: pointer;
+  transition: linear 0.3s;
+}
+.favIcon img:hover {
+  /* transform: translateY(-2px); */
+  transform: scale(1.1, 1.1);
+}
+.favIcon {
+  display: flex;
+  justify-content: flex-end;
+}
+.hide {
+  display: none;
+}
+.cardContent p span {
+  color: rgb(43, 25, 201);
+  cursor: pointer;
+}
+
+/* 31 words */

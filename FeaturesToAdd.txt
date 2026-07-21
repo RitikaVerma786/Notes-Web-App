@@ -1,0 +1,5 @@
+-hidescrollbars 
+-Add Modal when edit and delete
+-Search feature
+-add to favs feature in notes
+-Add ReadMore when reach word limit in card
