@@ -2,7 +2,7 @@ import {toast} from 'react-toastify';
 
 import  {deleteNotesReq } from '../../apis/notesApi';
 import { useNotesContext } from '../../contexts/NotesContext';
-import styles from './deletePopup.module.css';
+import styles from './DeletePopup.module.css';
 
 const DeletePopup = ()=>{
     const {setNotes,modalData,closeModal} = useNotesContext();
