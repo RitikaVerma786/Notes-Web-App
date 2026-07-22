@@ -1,3 +1,4 @@
+// DeletePopup component
 import {toast} from 'react-toastify';
 
 import  {deleteNotesReq } from '../../apis/notesApi';
