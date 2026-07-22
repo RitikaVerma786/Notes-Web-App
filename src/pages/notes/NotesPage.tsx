@@ -7,7 +7,6 @@ import Loader from "../../components/loader/Loader";
 import styles from "./NotesPage.module.css";
 import NotFoundImg from "../../assets/notFoundImg.png";
 import EmptyNotes from "../../assets/EmptyNotes.png";
-import Header from "../../components/header/Header";
 import SearchBar from "../../components/search/SearchBar";
 import NewNoteBtn from "../../components/newNoteBtn/NewNoteBtn";
 const DisplayNotes = lazy(
@@ -16,18 +15,14 @@ const DisplayNotes = lazy(
 // import DisplayNotes from "../../components/displayNotes/DisplayNotes";
 
 const NotesPage = () => {
-  const { notes, setNotes, setLoader,setfavNotesIds,favNotesIds } = useNotesContext();
+  const { notes, setNotes, setLoader, setfavNotesIds, favNotesIds } = useNotesContext();
   const [isDisplayFavs, setIsDisplayfavs] = useState(false);
   const [searchVal, setSearchVal] = useState("");
   const [debounceVal, setDebounceVal] = useState("");
   const [activeBtnId, setActiveBtnId] = useState("");
   const btnIds = ["All", "Favourites"];
-  console.log("notes", notes);
-  
+
   let displayNotes = notes;
-  console.log('display notes after re render..',displayNotes)
-  console.log('isDisplayFavs state==>',isDisplayFavs)
-  const token = localStorage.getItem("token");
 
   useEffect(() => {
     console.log("indide api useffect..");
@@ -91,10 +86,6 @@ const NotesPage = () => {
 
 
   if (isDisplayFavs) displayNotes = notes.filter((note) =>favNotesIds.includes(note._id));
-
-  console.log("display notes after getting favs==>",displayNotes);
-  
-  const notFound = displayNotes.length === 0;
 
   const onclickHandler = async (id: string) => {
     setActiveBtnId(id);

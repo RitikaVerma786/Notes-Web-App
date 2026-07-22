@@ -1,7 +1,4 @@
-import { useState } from "react";
-
 import { useNotesContext } from "../../contexts/NotesContext";
-import Modal from "../modal/Modal";
 import styles from "./NewNoteBtn.module.css";
 
 const NewNoteBtn = ()=>{

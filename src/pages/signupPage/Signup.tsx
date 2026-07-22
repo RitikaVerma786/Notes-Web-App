@@ -1,12 +1,10 @@
 import React, { useRef, useState } from "react";
-import { Navigate, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
-import { EMAIL_REGEX, PASSWORD_REGEX } from "../../constants/Constants";
 import openEyeImg from "../../assets/eye.png";
 import closeEyeImg from "../../assets/closed-eyes.png";
 import { signupApi } from "../../apis/authApi";
-import { useAuth } from "../../contexts/AuthContext";
 import styles from "./Signup.module.css";
 
 const Signup = () => {

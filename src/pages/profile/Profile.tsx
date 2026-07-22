@@ -9,12 +9,10 @@ import styles from "./Profile.module.css";
 
 
 const Profile = () => {
-  const { closeModal, isProfilePic, setIsProfilePic, profile, setProfile } =
-    useNotesContext();
+  const { closeModal, setIsProfilePic, profile, setProfile } = useNotesContext();
   const { loggedInUser } = useAuth();
   const [file, setFile] = useState<File | null>(null);
   const [preview, setPreview] = useState("");
-  const [edit, setEdit] = useState(false);
   const [showActionBtns, setshowActionBtns] = useState(false);
   const firstLetter = loggedInUser?.firstName[0].toUpperCase();
 
