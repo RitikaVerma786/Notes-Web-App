@@ -2,7 +2,7 @@
 import { useState } from "react";
 import {toast} from "react-toastify";
 
-import styles from "./form.module.css";
+import styles from "./Form.module.css";
 import { useNotesContext } from "../../contexts/NotesContext";
 import { createNotesReq, editNotesReq } from "../../apis/notesApi";
 import type { FormData } from "../../types/notes";
