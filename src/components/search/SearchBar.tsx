@@ -1,5 +1,5 @@
 import styles from "./Search.module.css";
-import SearchIcon from "../../assets/search.png";
+import SearchIcon from "../../assets/Search.png";
 import { type SetStateAction } from "react";
 
 
